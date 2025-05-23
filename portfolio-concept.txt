@@ -1,0 +1,21 @@
+
+About / Bemutatkozás
+– röviden, ki vagy, mi motivál (adat, elemzés, fejlesztés, oktatás, stb.)
+
+Data Science & Analytics
+– Python, SQL, adatfeldolgozás, vizualizáció
+
+Software Development
+– Java, C#, web/desktop, akár szoftvertesztelés
+
+Databases & SQL
+– SQL példák, adatbázis-projektek, optimalizálás, adatmodellezés
+
+Test Automation & Pentest
+– Szoftvertesztelés, automatizált tesztek, (ha érdekel) security/pentest példák
+
+Teaching Materials / Tananyagok
+– Saját oktatási anyagok, feladatok, letöltések, GitHub repók
+
+Contact / Kapcsolat
+

@@ -1,0 +1,100 @@
+Modern, reszponzív, kétnyelvű, animált portfólió site felépítése – lépésről lépésre
+1. Tervezés, vázlat (papíron vagy .txt-ben)
+Milyen fő szekciók lesznek? (pl. About, Projects, Teaching, Contact)
+
+Milyen nyelvek? (HU/EN)
+
+Milyen extra funkciók? (reszponzív, animált lapváltás)
+
+Milyen fő tartalmak, milyen sorrendben?
+
+2. Projektmappa elkészítése
+Hozz létre egy új mappát: pl. portfolio-site
+
+Struktúra:
+
+pgsql
+Másolás
+Szerkesztés
+portfolio-site/
+  ├─ index.html
+  ├─ styles.css
+  └─ script.js
+3. Alap HTML skeleton megírása
+index.html: csak egy fő fájl legyen, minden oldal/szekció ezen belül (single-page app jelleg!)
+
+Általános szerkezet:
+
+<header>: név, nyelvváltó, menü
+
+<main>: ide jönnek a sectionök (egyelőre csak az alap “dobozok”)
+
+<footer>
+
+4. Minden szekciót készíts el alapból (még tartalom nélkül)
+Pl. About, Projects, Teaching, Contact – mind <section>-be.
+
+Minden section tartalmazza mindkét nyelvet (HU/EN), amit majd JS-el váltasz.
+
+5. Menü elkészítése
+Menü a headerben (akár gombok, akár linkek)
+
+Menüből lehessen váltani a szekciók között (JS fogja mutatni/elrejteni az aktuális sectiont, de eleinte csak linkelj oda href="#about" stb.)
+
+6. Nyelvváltó kialakítása
+Két gomb vagy ikon: Magyar / English
+
+Alapból az egyik aktív (pl. magyar)
+
+Ha a felhasználó vált, JS-el elrejted az egyik nyelv divjeit, és megjeleníted a másikat
+
+7. CSS: Mobilra kezdj (mobil-first)
+Legyenek szép, egyszerű alapok: font, színek, padding, háttér
+
+Minden section külön kis “doboz” legyen, letisztult
+
+Ne foglalkozz még reszponzivitással, csak hogy mobilon jól nézzen ki
+
+8. Media query-k: Tablet, majd desktop támogatás
+Később hozzáadod:
+
+nagyobb padding, nagyobb fontméret
+
+projektlista: grid vagy több oszlop
+
+menü vízszintesen
+
+nagyobb header, stb.
+
+9. Szekciók közti váltás (JS)
+Alap: mindig csak egy section látszik, a többit elrejted (display: none)
+
+Menü gombjára kattintva JS-el “aktiválod” a megfelelő sectiont
+
+Később: ide jönnek az animációk (pl. fade/slide váltás)
+
+10. Animációk (lapváltás, section-váltás)
+Ha már a logika működik, CSS transition/animation + JS-sel vezérelve
+
+Először egyszerű fade-in/out, később akár slide
+
+11. Tartalom feltöltése
+Töltsd ki mindegyik sectiont (mindkét nyelven!), tedd bele a projektjeidet, elérhetőségeket, stb.
+
+12. Teszteld különböző kijelzőkön
+Mobil, tablet, desktop
+
+Chrome DevTools vagy más böngészőben “responsive” nézet
+
+13. Finomhangolás, dizájn, apró részletek
+Színek, ikonok, hover effektek, “szépítés”
+
+Accessibility (képeknél alt szöveg, gomboknál jó elnevezés)
+
+SEO: title, description, meta tagek
+
+14. Kód átnézése, GitHub-ra feltöltés
+Ha kész, indíts egy új repo-t, töltsd fel a mappát
+
+GitHub Pages-re kiteheted, és mutathatod mindenkinek
+
