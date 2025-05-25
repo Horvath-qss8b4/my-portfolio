@@ -1,40 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <title>Portfolio - Main</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <div>
-        <header>
-            <nav>
-                <div>
-                    <ul class="navbar">
-                        <li><a href="#folap">Főlap</a></li>
-                        <li><a href="#datascience">Analitika</a></li>
-                        <li><a href="#desktop">Fejlesztés</a></li>
-                        <li><a href="#">SQL</a></li>
-                        <li><a href="#">Tesztelés</a></li>
-                        <li><a href="#">Tananyag</a></li>
-                        <li><a href="#contact">Kapcsolat</a></li>
-                    </ul>
-                </div>
-                <div class="lang-switcher">
-                    <button class="lang-btn hu"><span class="inward">HU</span></button>
-                    <div class="divider"></div>
-                    <button class="lang-btn en"><span class="inward">EN</span></button>
-                </div>
-            </nav>
-        </header>
-        <h1>Magyar</h1>
-        <p>Ez egy példa szöveg.</p>
+  <body>
+    <!-- -------------------------------------------- Hungarian langauge----------------------------------------------- -->
+    <div class="lang-hu">
+      <section id="home">
+        <div class="lang-switcher">
+          <button class="lang-btn hu active" onclick="setLang('hu')"><span class="inward">HU</span></button>
+          <button class="lang-btn en" onclick="setLang('en')"><span class="inward">EN</span></button>
+        </div>
+        <div id="velcome">
+          <h1>Üdv a portfóliómon!<br /></h1>
+          <h2>Fejlesztő &amp; IT oktató vagyok.</h2>
+          <p id="hero-desc">Meg találod a munkáimat és a stackjeim.</p>
+        </div>
+      </section>
+      <section id="about">
+        <h2>Rólam</h2>
+      </section>
+      <section id="stackjeim">
+        <h2>Stackjeim</h2>
+        <div class="stacks-grid-img">
+          <div class="stack-card-img">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java ikon" />
+            <h3>Java Backend</h3>
+            <p class="stack-lead">Modern, vállalati alkalmazások fejlesztése Spring keretrendszerrel, REST API-val.</p>
+          </div>
+          <div class="stack-card-img">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python ikon"
+            />
+            <h3>Python</h3>
+            <p class="stack-lead">Data science, automatizáció, web (Flask, Django).</p>
+          </div>
+          <div class="stack-card-img">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux ikon" />
+            <h3>Kali Linux / Pentest</h3>
+            <p class="stack-lead">Penetrációs tesztek, security audit, automatizált tesztelés.</p>
+          </div>
+        </div>
+      </section>
+      <section id="tananyag">Oktatás</section>
+      <section id="contact">
+        <h2>Kapcsolat szekció</h2>
+        <a href="horvath-laszlo-cv.pdf" download class="cv-download-btn"> 📄 Önéletrajz letöltése (PDF) </a>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <span>Horváth László</span>
+          </div>
+          <div class="footer-socials">
+            <a href="https://github.com/felhasznalo" target="_blank" aria-label="GitHub">
+              <!-- GitHub SVG ikon -->
+              <svg width="24" height="24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.021c0 4.43 2.868 8.193 6.839 9.525.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.533 1.033 1.533 1.033.892 1.529 2.341 1.088 2.91.832.092-.646.35-1.089.636-1.34-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.103-.253-.447-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.338 1.908-1.296 2.746-1.025 2.746-1.025.548 1.378.204 2.397.1 2.65.64.7 1.028 1.594 1.028 2.687 0 3.847-2.339 4.695-4.566 4.944.359.308.678.916.678 1.848 0 1.334-.012 2.412-.012 2.74 0 .268.18.579.688.481A10.013 10.013 0 0 0 22 12.021C22 6.484 17.523 2 12 2z"
+                />
+              </svg>
+            </a>
+            <a href="https://linkedin.com/in/felhasznalo" target="_blank" aria-label="LinkedIn">
+              <!-- LinkedIn SVG ikon -->
+              <svg width="24" height="24" fill="currentColor">
+                <path
+                  d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.5 19h-3v-9h3v9zm-1.5-10.27c-.97 0-1.75-.79-1.75-1.76 0-.97.79-1.76 1.75-1.76s1.75.79 1.75 1.76c0 .97-.78 1.76-1.75 1.76zm13.5 10.27h-3v-4.77c0-1.14-.02-2.6-1.59-2.6-1.6 0-1.84 1.25-1.84 2.52v4.85h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.72z"
+                />
+              </svg>
+            </a>
+            <a href="mailto:email@email.com" aria-label="Email">
+              <!-- Email SVG ikon -->
+              <svg width="24" height="24" fill="currentColor">
+                <path
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm-16 12V8.12l7.88 7.88c.39.39 1.02.39 1.41 0L20 8.12V18H4z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="footer-copy">&copy; 2025 Horváth László. All rights reserved.</div>
+        </div>
+      </footer>
+    </div>
+    <!-- -------------------------------------------- English langauge----------------------------------------------- -->
+    <div class="lang-en">
+      <header>
+        <nav>
+          <button class="hamburger" onclick="toggleMenu()" aria-label="Menü">
+            <span></span><span></span><span></span>
+          </button>
+          <div>
+            <ul class="navbar">
+              <li><a href="#folap">Main</a></li>
+              <li><a href="#datascience">Analitiks</a></li>
+              <li><a href="#desktop">Develop</a></li>
+              <li><a href="#sql">SQL</a></li>
+              <li><a href="#teszt">Test</a></li>
+              <li><a href="#tananyag">Teaching</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="lang-switcher">
+            <button class="lang-btn hu" onclick="setLang('hu')"><span class="inward">HU</span></button>
+            <div class="divider"></div>
+            <button class="lang-btn en active" onclick="setLang('en')"><span class="inward">EN</span></button>
+          </div>
+        </nav>
+      </header>
+      <section id="home">
+        <h1>English</h1>
+        <p>This is an example text.</p>
+      </section>
+      <section id="about">About me section</section>
+      <section id="projects">Projects section</section>
+      <section id="contact">Contact section</section>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

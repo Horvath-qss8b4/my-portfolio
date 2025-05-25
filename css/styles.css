@@ -1,0 +1,168 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: black;
+  color: #eee;
+}
+
+h2 {
+  margin-top: 0;
+}
+.lang-hu {
+  display: block;
+}
+.lang-en {
+  display: none;
+}
+
+.lang-switcher {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px #0004;
+  border: none;
+  height: 3em;
+  width: 100%;
+  max-width: 95%;
+  margin-top: 3em;
+}
+
+.lang-btn {
+  background: #444;
+  color: #eee;
+  border: none;
+  padding: 0.33em 1.4em;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid #1877f2;
+  height: 3em;
+  width: 4em;
+}
+
+.lang-btn.hu {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.lang-btn.en {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* Felirat befelé dől: HU jobbra, EN balra */
+.hu .inward {
+  display: inline-block;
+  transform: skewX(18deg);
+}
+.en .inward {
+  display: inline-block;
+  transform: skewX(-18deg);
+}
+
+/* Hover – Facebook kék, fehér betű */
+.lang-btn:hover,
+.lang-btn:focus {
+  background: #1877f2;
+  color: #fff;
+  border: 1px solid white;
+}
+
+.lang-btn.active {
+  background: #1877f2;
+  color: #fff;
+  /* tetszőleges extra kiemelés */
+  box-shadow: 0 0 8px #1877f2;
+  z-index: 2;
+}
+
+/* Szép: ne legyen select keret kattintás után */
+.lang-btn:focus {
+  outline: none;
+}
+.cv-download-btn {
+  display: inline-block;
+  background: #1877f2;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.7em 1.5em;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.15rem;
+  box-shadow: 0 2px 8px #1877f299;
+  transition: background 0.18s, box-shadow 0.18s;
+  margin-top: 1em;
+}
+
+.cv-download-btn:hover,
+.cv-download-btn:focus {
+  background: #135bcc;
+  box-shadow: 0 4px 16px #1877f2cc;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
+.footer {
+  background: #11131a;
+  color: #c6d0f5;
+  padding: 2rem 0 1rem 0;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+}
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+  color: #8aadf4;
+}
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.footer-socials a {
+  color: #c6d0f5;
+  transition: color 0.2s;
+}
+.footer-socials a:hover {
+  color: #8aadf4;
+}
+.footer-copy {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Mobilra */
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .lang-btn {
+    width: 3.4em;
+    padding: 0.3em 1em;
+  }
+  .lang-switcher {
+    margin-top: 1em;
+  }
+}
+header {
+  display: none;
+}

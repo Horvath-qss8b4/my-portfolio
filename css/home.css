@@ -1,0 +1,50 @@
+#home {
+  min-height: 100vh;
+  background: url("../img/mainsection.png") no-repeat right center;
+  background-size: cover;
+  background-position: left top;
+}
+
+#velcome h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 0em;
+  text-shadow: 0 4px 20px #0080ff77;
+}
+
+#velcome h2 {
+  font-size: 1.5rem;
+  color: #cce7ff;
+  margin-top: 0;
+}
+#welcome #hero-desc {
+  color: #b2d8ff;
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+#velcome {
+  margin-top: 9em;
+  max-width: 30em;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  #home {
+    background-position: center top;
+  }
+  #home h1 {
+    font-size: 2em;
+  }
+
+  #velcome {
+    margin-top: 14em;
+    max-width: 95%;
+  }
+  #hero-desc {
+    margin-top: 0em;
+  }
+  #velcome h2 {
+    margin-bottom: 0em;
+  }
+}
